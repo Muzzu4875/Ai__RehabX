@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-RehabX | Smarter Rehab. Healthier Athletes.</title>
+<meta name="description" content="AI-powered smart system for real-time sports injury detection and personalized rehabilitation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#home" class="logo">AI-Rehab<span>X</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav id="navLinks">
+    <a href="#about">About</a><a href="#solution">Solution</a><a href="#features">Features</a>
+    <a href="#flow">System flow</a><a href="#tech">Technology</a><a href="#demo">Live demo</a>
+    <a href="#impact">Impact</a><a href="#team">Team</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="college">AVS Engineering College (Autonomous) &middot; Discipline, Excellence, Innovation</p>
+    <h1>AI-Rehab<span>X</span></h1>
+    <p class="lead">An AI-powered smart system for real-time sports injury detection and personalized rehabilitation.</p>
+    <p class="tagline">Smarter Rehab. Healthier Athletes. Stronger Tomorrow.</p>
+    <div class="cta">
+      <a class="btn primary" href="#demo">Try the live demo</a>
+      <button class="btn ghost" data-ask="What is AI-RehabX?">Ask the AI assistant</button>
+    </div>
+  </div>
+  <div class="hero-card" aria-label="Sample live reading">
+    <div class="pulse"><svg viewBox="0 0 300 60" aria-hidden="true"><polyline points="0,30 70,30 85,30 95,8 108,52 120,30 190,30 205,30 215,12 226,46 238,30 300,30"/></svg></div>
+    <div class="reading"><b id="heroHr">142</b><small>bpm</small></div>
+    <div class="reading"><b>36.8</b><small>&deg;C</small></div>
+    <div class="reading warn"><b>82%</b><small>knee risk</small></div>
+    <p>Injury detected: right knee, high risk. Reduce load.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>What is AI-RehabX?</h2>
+  <div class="two-col">
+    <p class="big">AI-RehabX detects sports injuries in real time and builds a rehabilitation program around each athlete. It pairs modern technology with sports science so athletes recover faster, train smarter and perform better.</p>
+    <ul class="pillars">
+      <li><b>Smart detection</b><span>Finds injuries early and accurately.</span></li>
+      <li><b>Real-time monitoring</b><span>Tracks your movement and health.</span></li>
+      <li><b>Personalized rehabilitation</b><span>Plans based on your needs.</span></li>
+      <li><b>Better performance</b><span>Get back stronger and safer.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section id="solution" class="section tint">
+  <h2>Our solution</h2>
+  <p class="sub">AI, wearable sensors and computer vision work together to monitor, analyze and guide rehabilitation as it happens.</p>
+  <ol class="steps">
+    <li><b>Camera</b><span>Monitors movement</span></li>
+    <li><b>Wearable sensors</b><span>Heart rate, motion, temperature</span></li>
+    <li><b>AI analysis</b><span>Detects posture, angles, risk</span></li>
+    <li><b>Personalized feedback</b><span>Guidance and progress report</span></li>
+  </ol>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section">
+  <h2>Key features</h2>
+  <div class="grid">
+    <article><h3>AI injury detection and risk prediction</h3><p>Detects abnormal movement and predicts injury risk early.</p></article>
+    <article><h3>Real-time posture and movement analysis</h3><p>Tracks joint angles, balance and exercise form.</p></article>
+    <article><h3>Vital signs monitoring</h3><p>Monitors heart rate, body temperature and activity.</p></article>
+    <article><h3>Personalized rehabilitation guidance</h3><p>Customized exercises, safe load progression and recovery guidance.</p></article>
+    <article><h3>Real-time progress tracking</h3><p>Shows recovery progress with instant feedback and measurable metrics.</p></article>
+    <article><h3>Return-to-play assessment</h3><p>Evaluates readiness and gives objective recovery insights.</p></article>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section id="flow" class="section tint">
+  <h2>System flow: injury detection to full recovery</h2>
+  <ol class="flow" id="flowList">
+    <li><button>Data capture</button></li><li><button>AI analysis</button></li><li><button>Personalized plan</button></li>
+    <li><button>Guided rehabilitation</button></li><li><button>Progress tracking</button></li><li><button>Return to play</button></li><li><button>Better performance</button></li>
+  </ol>
+  <div class="flow-detail" id="flowDetail" aria-live="polite"></div>
+  <p class="loop">A continuous feedback loop sends results back into the plan after every session.</p>
+</section>
+
+<!-- TECH -->
+<section id="tech" class="section">
+  <h2>Hardware and software</h2>
+  <div class="two-col tech">
+    <div><h3>Hardware: sensors, devices, capture</h3>
+      <ul><li>Camera system: motion capture, posture analysis, video tracking</li>
+      <li>Wearable sensors: heart rate, temperature, motion and activity</li>
+      <li>AI model on an edge device: ESP32 / microcontroller</li>
+      <li>Inertial measurement unit: joint angles, balance detection</li>
+      <li>Communication module: Wi-Fi / Bluetooth, cloud sync</li>
+      <li>Power supply: rechargeable, long life, portable</li></ul></div>
+    <div><h3>Software: analyze, guide, personalize</h3>
+      <ul><li>AI algorithm: injury detection, movement analysis, risk prediction</li>
+      <li>User dashboard (web / mobile): real-time data, alerts</li>
+      <li>Personalized rehab plan: exercises, intensity, recovery timeline</li>
+      <li>Data storage and cloud: secure, accessible anytime</li>
+      <li>AI feedback system: real-time suggestions</li>
+      <li>Analytics and reporting: long-term health tracking</li></ul></div>
+  </div>
+</section>
+
+<!-- DEMO -->
+<section id="demo" class="section tint">
+  <h2>Live demo: sample output</h2>
+  <p class="sub">Drag the slider to change the knee angle and watch the simulated analysis update. This is illustrative data, not a medical reading.</p>
+  <div class="demo">
+    <div class="panel">
+      <label for="angle">Knee angle: <b id="angleVal">68</b>&deg;</label>
+      <input type="range" id="angle" min="30" max="130" value="68">
+      <label for="load">Joint load: <b id="loadVal">High</b></label>
+      <input type="range" id="load" min="0" max="100" value="75">
+      <button class="btn primary" id="analyzeBtn">Run analysis</button>
+    </div>
+    <div class="panel result" aria-live="polite">
+      <div class="risk"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" class="track"/><circle cx="60" cy="60" r="50" class="arc" id="arc"/></svg><b id="riskVal">82%</b></div>
+      <p id="riskMsg"></p><p class="small" id="phaseMsg"></p>
+    </div>
+  </div>
+  <h3 class="phases-title">Rehabilitation plan</h3>
+  <div class="phases" id="phases"></div>
+</section>
+
+<!-- IMPACT -->
+<section id="impact" class="section">
+  <h2>Real-world impact</h2>
+  <div class="grid">
+    <article><h3>Faster recovery</h3><p>Early detection and targeted rehab reduce recovery time and prevent re-injury.</p></article>
+    <article><h3>Better performance</h3><p>Personalized plans improve biomechanics so athletes train smarter, not harder.</p></article>
+    <article><h3>Injury prevention</h3><p>AI flags risk factors and movement imbalances before injury happens.</p></article>
+    <article><h3>Personalized care</h3><p>Data-driven plans adjust to each athlete's progress and goals.</p></article>
+    <article><h3>Accessible and convenient</h3><p>Works in clinics, training centers and homes, anytime.</p></article>
+    <article><h3>Healthier, stronger living</h3><p>Lowers long-term injury risk and keeps athletes active and confident.</p></article>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section tint">
+  <h2>Why it fits the hackathon theme</h2>
+  <ul class="why">
+    <li><b>Real-world problem:</b> injuries go unnoticed early, and traditional rehab is slow, manual and generic.</li>
+    <li><b>Innovative technology:</b> AI, wearables, computer vision and real-time analytics combined.</li>
+    <li><b>Focus on impact:</b> prevents injuries, speeds recovery, improves performance.</li>
+    <li><b>Feasible:</b> uses existing wearables and cameras, scales to sports centers and clinics.</li>
+  </ul>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="section">
+  <h2>Team</h2>
+  <ul class="team"><li>Dhaara Senthilkumar</li><li>Divya</li><li>Gowthami</li><li>Kowsalaya</li></ul>
+  <p class="sub">AVS Engineering College (Autonomous)</p>
+</section>
+</main>
+
+<footer>
+  <b>AI-RehabX</b> &middot; Detect early. Analyze smart. Rehabilitate personalized. Recover faster. Perform stronger.
+  <p>Code today. Heal tomorrow.</p>
+</footer>
+
+<!-- AI CHAT -->
+<button class="chat-fab" id="chatFab" aria-label="Open AI assistant" aria-expanded="false">Ask AI</button>
+<aside class="chat" id="chat" hidden aria-label="RehabX AI assistant">
+  <div class="chat-head"><b>RehabX Assistant</b><button id="chatClose" aria-label="Close chat">&times;</button></div>
+  <div class="chat-body" id="chatBody" aria-live="polite"></div>
+  <div class="chips" id="chips"></div>
+  <form id="chatForm" autocomplete="off">
+    <input id="chatInput" type="text" placeholder="Ask about AI-RehabX..." aria-label="Your message">
+    <button type="submit">Send</button>
+  </form>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
